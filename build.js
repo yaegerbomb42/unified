@@ -23,6 +23,8 @@ if (fs.existsSync(srcVendor)) {
 // Copy public assets & html/js/css to dist
 const filesToCopy = [
   'index.html',
+  'shred.html',
+  'reality.html',
   'music.js',
   'style.css',
   'app.js',
@@ -44,4 +46,4 @@ for (const file of filesToCopy) {
   }
 }
 
-console.log('✓ unified built successfully with shader core & high-energy looping soundtrack');
+console.log('✓ unified built successfully with Reality Engine & Shred tabs');
