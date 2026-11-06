@@ -1,0 +1,9 @@
+{
+  "name": "unified",
+  "version": "1.0.0",
+  "private": true,
+  "description": "5 MILE RUN. SHRED SEASON. Kinetic Runner & Telemetry Experience",
+  "scripts": {
+    "build": "node build.js"
+  }
+}
