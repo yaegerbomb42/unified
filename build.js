@@ -25,6 +25,7 @@ const filesToCopy = [
   'index.html',
   'style.css',
   'app.js',
+  'lattice.js',
   'earth.js',
   'rose.js',
   'audio.js',
@@ -42,4 +43,4 @@ for (const file of filesToCopy) {
   }
 }
 
-console.log('✓ unified built successfully into dist/ with 3D Earth, Rose Petals & Vendor modules');
+console.log('✓ unified built successfully with 3D Ceiling Tile Lattice, Singularity, Earth & Rose');
