@@ -6,13 +6,13 @@ if (!fs.existsSync(distDir)) {
   fs.mkdirSync(distDir, { recursive: true });
 }
 
-// Ensure vendor dir exists in dist
+// Ensure vendor dir exists in dist if needed
 const distVendor = path.join(distDir, 'vendor');
 if (!fs.existsSync(distVendor)) {
   fs.mkdirSync(distVendor, { recursive: true });
 }
 
-// Copy vendor files
+// Copy vendor files if present
 const srcVendor = path.join(__dirname, 'vendor');
 if (fs.existsSync(srcVendor)) {
   for (const f of fs.readdirSync(srcVendor)) {
@@ -23,6 +23,7 @@ if (fs.existsSync(srcVendor)) {
 // Copy public assets & html/js/css to dist
 const filesToCopy = [
   'index.html',
+  'music.js',
   'style.css',
   'app.js',
   'lattice.js',
@@ -43,4 +44,4 @@ for (const file of filesToCopy) {
   }
 }
 
-console.log('✓ unified built successfully with vendor Three.js bundle and all assets');
+console.log('✓ unified built successfully with shader core & high-energy looping soundtrack');
