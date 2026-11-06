@@ -1,24 +1,19 @@
-# UNIFIED // 5 MILE RUN. SHRED SEASON.
+# UNIFIED // PROJECT NO FUCKS
 
-A hyper-stylized kinetic runner HUD, interactive typography mesh, and real-time biometrics telemetry engine.
+**5 MILE RUN. SHRED SEASON.** A procedural cosmic runner experience built from a rose, a rotating Earth, an infinite ceiling lattice, and a signal from the void.
 
-Live Webpage: **[yaegerbomb42.github.io/unified](https://yaegerbomb42.github.io/unified/)**
+Live: https://yaegerbomb42.github.io/unified/
+Central deployment source: https://github.com/yaegerbomb42/infra/tree/main/apps/unified
 
----
+## Experience
+- Procedural Canvas 2D world: velvet petals, rotating Earth, gravitational rings, infinite lattice, stars, and overdrive streaks.
+- Pointer parallax, bloom burst, three color realities, and press-and-hold overdrive (Space also works).
+- Five-mile simulated run with splits, pace, elapsed time, cadence, elevation, energy output, course trace, pause, and reset.
+- Optional synthesized cadence audio, enabled only after an explicit gesture.
+- Frontier Intelligence chat through the persistent /api/messages service. Provider credentials stay server-side in api_keys.md.
+- Browser-local conversation fallback when the remote service is unavailable.
 
-## ⚡ Highlights
-- **Procedural Particle Mesh Engine**: Kinetic typography rendering "5 MILE RUN. SHRED SEASON." responsive to cursor & touch with elastic spring-lattice physics.
-- **Biometric Telemetry Engine**: Simulated real-time heart rate zones, cadence (176 SPM), pace tracking, elevation gain, calories, and lactate threshold curves.
-- **Topographic Elevation Radar**: Dynamic 2D canvas radar graphing course elevation profiles across all 5 miles with live runner position tracking.
-- **Web Audio Cadence Synth**: Built-in zero-dependency Web Audio synthesizer creating 175 BPM footfall rhythm, heartbeat sub-bass, and milestone audio chimes.
-- **Shred Overdrive**: Hold spacebar or tap the overdrive button to accelerate telemetry and unleash particle warp speed.
-- **Multi-Theme Engine**: Cyber Void, Solar Flare, and Hyper-Gold.
+## Build
+`npm run build` expands the verified segmented source archive into readable app files and creates a dependency-free static `dist/`. No package installation or third-party runtime library is required.
 
----
-
-## 🚀 Development
-```bash
-npm install
-npm run build
-```
-Open `index.html` or deploy directly to GitHub Pages.
+All biometric-style values are simulation telemetry, not measured health data.
