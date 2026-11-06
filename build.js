@@ -43,4 +43,4 @@ for (const file of filesToCopy) {
   }
 }
 
-console.log('✓ unified built successfully with 3D Ceiling Tile Lattice, Singularity, Earth & Rose');
+console.log('✓ unified built successfully with vendor Three.js bundle and all assets');
