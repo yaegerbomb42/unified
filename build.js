@@ -6,8 +6,35 @@ if (!fs.existsSync(distDir)) {
   fs.mkdirSync(distDir, { recursive: true });
 }
 
+// Ensure vendor dir exists in dist
+const distVendor = path.join(distDir, 'vendor');
+if (!fs.existsSync(distVendor)) {
+  fs.mkdirSync(distVendor, { recursive: true });
+}
+
+// Copy vendor files
+const srcVendor = path.join(__dirname, 'vendor');
+if (fs.existsSync(srcVendor)) {
+  for (const f of fs.readdirSync(srcVendor)) {
+    fs.copyFileSync(path.join(srcVendor, f), path.join(distVendor, f));
+  }
+}
+
 // Copy public assets & html/js/css to dist
-const filesToCopy = ['index.html', 'style.css', 'app.js', 'audio.js', 'particles.js', 'telemetry.js', 'topo.js'];
+const filesToCopy = [
+  'index.html',
+  'style.css',
+  'app.js',
+  'earth.js',
+  'rose.js',
+  'audio.js',
+  'particles.js',
+  'telemetry.js',
+  'topo.js',
+  'AGENT_CARD.md',
+  'README.md'
+];
+
 for (const file of filesToCopy) {
   const src = path.join(__dirname, file);
   if (fs.existsSync(src)) {
@@ -15,4 +42,4 @@ for (const file of filesToCopy) {
   }
 }
 
-console.log('✓ unified built successfully into dist/');
+console.log('✓ unified built successfully into dist/ with 3D Earth, Rose Petals & Vendor modules');
